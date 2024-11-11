@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #e9ecef;
+        margin: 0;
+        padding: 0;
+    }
+
+    .signup-container {
+        display: flex;
+        height: 100vh; /* Full height of the viewport */
+    }
+
+    .signup-image {
+        width: 50%;
+        background-image: url('landingpage/images/banner_5.jpg'); /* Add your image path */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .signup-form {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #000000;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 5px;
+        color: #495057;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        padding: 12px;
+        background-color: #000000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 15px;
+        color: #6c757d;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="signup-container">
+        <div class="signup-image"></div> <!-- Left side image -->
+        <div class="signup-form">
+            <div class="form-container">
+                <h1>User Signup</h1>
+                <form action="signup.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required>
+                    
+                    <label for="contact">Contact:</label>
+                    <input type="text" name="contact" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" required>
+                    
+                    <select name="role" required aria-readonly="true">
+                        <!-- <option value="admin">Admin</option> -->
+                        <option value="user">User</option>
+                        <!-- <option value="seller">Seller</option> -->
+                    </select>
+
+                    <!-- <input type="hidden" name="role" value="buyer"> Setting role to buyer for user signup -->
+                    
+                    <input type="submit" value="Signup">
+                </form>
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

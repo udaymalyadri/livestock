@@ -1,0 +1,40 @@
+
+# category
+
+GET all categories:
+
+Request: GET http://localhost/livestock/api/categories.php
+Response: A JSON array of all categories.
+Create a new category:
+
+Request: POST http://localhost/livestock/api/categories.php
+Body: Form-data with name and image (file upload).
+Update a category:
+
+Request: PUT http://localhost/livestock/api/categories.php
+Body: Form-data with id, name, and optional image.
+Delete a category:
+
+Request: DELETE http://localhost/livestock/api/categories.php
+Body: Form-data with id.
+
+
+
+# users
+
+GET all users:
+
+Request: GET http://localhost/livestock/api/users.php
+Response: A JSON array of all users.
+Create a new user:
+
+Request: POST http://localhost/livestock/api/users.php
+Body: Form-data with name, contact, email, and role.
+Update a user:
+
+Request: PUT http://localhost/livestock/api/users.php
+Body: Form-data with id, name, contact, email, and role.
+Delete a user:
+
+Request: DELETE http://localhost/livestock/api/users.php
+Body: Form-data with id.

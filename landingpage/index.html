@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cattle Cart</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="landingpage/images/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid px-5 d-none d-lg-block">
+        <div class="row gx-5 py-3 align-items-center">
+            
+            <div class="col-lg-6">
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="index.html" class="navbar-brand ms-lg-5">
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Farm</span>Fresh</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="d-flex align-items-center justify-content-end">
+                    <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-primary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="images/logo.png" alt="Logo" style="height: 60px; width: auto;" class="me-2">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <div class="navbar-nav py-0">
+                <a href="../login.html" class="nav-item nav-link login">LOGIN</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle register" data-bs-toggle="dropdown">REGISTER</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="../seller/seller_signup.html" class="dropdown-item">Seller</a>
+                        <a href="../signup.html" class="dropdown-item">Customer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <style>
+        /* Custom styles for navbar links */
+        .navbar-nav .nav-link {
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        }
+    
+        .navbar-nav .nav-link.login:hover,
+        .navbar-nav .nav-link.register:hover {
+            background-color: black; /* Change background to black on hover */
+            color: white; /* Change text color to white on hover */
+        }
+    </style>
+    
+
+
+ <!-- Carousel Start -->
+<div class="container-fluid p-0">
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="images/sheep_1.jpg" alt="Image" style="max-height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="top: 0; bottom: 0; left: 0; right: 0;">
+                    <div class="text-center p-5" style="max-width: 900px;">
+                        <h4 class="display-1 text-white mb-md-4">Welcome To Cattlecart</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="images/testimonial.jpg" alt="Image" style="max-height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="top: 0; bottom: 0; left: 0; right: 0;">
+                    <div class="text-center p-5" style="max-width: 900px;">
+                        <h4 class="display-1 text-white mb-md-4">Welcome To Cattlecart</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif; /* Set font to Poppins */
+    }
+    .carousel-caption h4 {
+        font-family: 'Poppins', sans-serif; /* Ensure Poppins font for carousel text */
+        font-size: 3rem; /* Decrease font size (adjust as needed) */
+    }
+</style>
+<!-- Carousel End -->
+
+
+<!-- Banner Start -->
+<div class="container-fluid banner mb-5">
+    <div class="container">
+        <div class="row gx-0">
+            <div class="col-md-6 position-relative">
+                <div class="banner-item d-flex flex-column justify-content-center p-5" style="height: 300px;">
+                    <img src="images/banner_4.jpg" alt="Live Stock" class="contentImage">
+                    <h3 class="text-white mb-3">Live Stock</h3>
+                    <p class="text-white">"Discover high-quality, well-bred livestock that ensures healthy and sustainable farming. Each animal is carefully selected for its superior traits, ensuring the best for your farm."</p>
+                </div>
+            </div>
+            <div class="col-md-6 position-relative">
+                <div class="banner-item d-flex flex-column justify-content-center p-5" style="height: 300px;">
+                    <img src="images/milk2.jpg" alt="Live Stock Products" class="contentImage">
+                    <h3 class="text-white mb-3">Live Stock Products</h3>
+                    <p class="text-white">"Explore premium livestock products, from fresh dairy to organic meats. Our products are sourced from trusted farms, ensuring freshness, quality, and nutrition in every purchase."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+.banner-item {
+    position: relative; /* Ensure position is relative for proper layout */
+    overflow: hidden; /* Prevents zoom effect from overflowing */
+}
+
+.contentImage {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contentImage:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.banner-item h3,
+.banner-item p {
+    position: relative; /* Ensure text is on top of the image */
+    z-index: 1; /* Make sure text appears above the image */
+}
+</style>
+<!-- Banner End -->
+
+
+<!-- About Start -->
+<div class="container-fluid about pt-5">
+    <div class="container">
+        <div class="row gx-5">
+            <!-- Image Section -->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <img class="img-fluid" src="images/vet2.jpg" alt="Livestock Image" style="width: 100%; height: auto;"> <!-- Keep the image size as is -->
+            </div>
+            <!-- Text Section with Cards -->
+            <div class="col-lg-6 d-flex align-items-stretch">
+                <div class="d-flex flex-column justify-content-between w-100 h-100"> <!-- Full height for cards -->
+                    <div class="mb-0 pb-0"> <!-- Removed margin and padding bottom -->
+                        <h5 class="text-primary text-uppercase">About Us</h5>
+                        <h3 class="custom-display-5">Your Trusted Marketplace for Quality Livestock</h3>
+                    </div>
+                    <p class="mb-0" style="margin-bottom: 0rem; margin-top: 0;">At CattleCart, we are dedicated to connecting farmers and livestock enthusiasts with top-quality livestock. Our mission is to promote healthy and sustainable farming practices while providing access to a diverse range of livestock to meet your needs.</p>
+                    <div class="row gx-5 gy-4 mt-auto">
+                        <!-- Card 1 -->
+                        <div class="col-sm-6 d-flex justify-content-center"> <!-- Center card horizontally -->
+                            <div class="card" style="background-color: #fff; border-radius: 10px; width: 250px; padding: 20px; text-align: center; transition: transform 0.3s;">
+                                <i class="fa fa-seedling text-dark" style="font-size: 60px; height: 60px; line-height: 60px; box-shadow: 0px 0px 0px;"></i>
+                                <h5 class="mb-3" style="margin-top: 3px;">100% Healthy Livestock</h5>
+                                <p class="mb-0" style="margin-top: 0; text-align: justify;">We ensure that all our livestock is sourced from trusted farms, guaranteeing the health and quality of every animal.</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-sm-6 d-flex justify-content-center"> <!-- Center card horizontally -->
+                            <div class="card" style="background-color: #fff; border-radius: 10px; width: 250px; padding: 20px; text-align: center; transition: transform 0.3s;">
+                                <i class="fa fa-award text-dark" style="font-size: 60px; height:60px; line-height:100px ; box-shadow: 0px 0px 0px;"></i> <!-- Removed margin-bottom -->
+                                <h5 class="mb-3" style="margin-top: 3px;">Trusted by Farmers</h5>
+                                <p class="mb-0" style="margin-top: 0; text-align: justify;">Our platform is recognized by numerous farmers for its reliability and commitment to quality, making us a preferred choice in the livestock marketplace.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+<!-- Services Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="mb-3">
+                    <h6 class="text-uppercase" style="color: #000;">Services</h6> <!-- Text color changed to black -->
+                    <h2 class="display-5" style="color: #000;">Livestock Marketplace Services</h2> <!-- Text color changed to black -->
+                </div>
+                <p class="mb-4" style="color: #000;">At CattleCart, we specialize in providing healthy livestock that has been thoroughly examined by veterinary doctors. Our commitment is to ensure that every animal meets the highest standards of health and quality.</p>
+                <a href="" class="btn btn-dark py-md-3 px-md-5">Contact Us</a>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white text-center p-5">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-check-circle display-1 mb-3"></i>
+                    </div>
+                    <h4 class="text-black">Healthy Livestock</h4>
+                    <p class="mb-0">All our livestock is examined by qualified veterinary doctors, ensuring the health and well-being of every animal.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white text-center p-5">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-egg display-1 mb-3"></i>
+                    </div>
+                    <h4 class="text-black">Quality Livestock Products</h4>
+                    <p class="mb-0">Explore a variety of livestock products sourced from trusted farms, ensuring freshness, quality, and nutrition.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white text-center p-5">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-user-md display-1 mb-3"></i>
+                    </div>
+                    <h4 class="text-black">Vet Examination</h4>
+                    <p class="mb-0">We ensure that all livestock undergoes thorough health checks by experienced veterinary professionals.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white text-center p-5">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-leaf display-1 mb-3"></i>
+                    </div>
+                    <h4 class="text-black">Organic Practices</h4>
+                    <p class="mb-0">Our livestock is raised following organic practices to promote sustainability and environmental responsibility.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white text-center p-5">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-thumbs-up display-1 mb-3"></i>
+                    </div>
+                    <h4 class="text-black">Customer Satisfaction</h4>
+                    <p class="mb-0">We prioritize our customers' satisfaction by providing quality products and excellent service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* For the service-item cards */
+.service-item {
+    background-color: #fff; /* Card background set to white */
+    box-shadow: 0 0 45px #EDEDED;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition for smooth hover effect */
+    height: 300px; /* Fixed height for uniformity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent; /* Border to help in hover transition */
+}
+
+/* Wrapper for the icon to apply background color */
+.icon-wrapper {
+    background-color: #fff; /* Icon background color set to white */
+    padding: 0px;
+    border-radius: 0; /* Circular icon background */
+    display: inline-block;
+    transition: background-color 0.5s ease; /* Smooth color transition */
+}
+
+.service-item i {
+    color: #000 !important; /* Icon color set to black */
+    transition: color 0.5s ease !important; /* Smooth color transition */
+}
+
+.service-item h4,
+.service-item p {
+    color: #000 !important; /* Text color set to black */
+    transition: color 0.5s ease !important; /* Smooth color transition */
+}
+
+/* Hover effect for service-item */
+.service-item:hover {
+    background-color: #000 !important; /* Change background to black on hover */
+    color: #fff !important; /* Change text and icon colors to white */
+    border-color: #fff !important; /* Change border color on hover */
+}
+
+/* Specific hover changes for icon wrapper */
+.service-item:hover .icon-wrapper {
+    background-color: #000 !important; /* Change icon background to black on hover */
+}
+
+.service-item:hover i {
+    color: #fff !important; /* Change icon color to white on hover */
+}
+
+.service-item:hover h4,
+.service-item:hover p {
+    color: #fff !important; /* Change text (h4 and p) to white on hover */
+}
+
+/* For Contact Us button */
+.btn.btn-dark {
+    background-color: #000 !important; /* Button background color set to black */
+    border: none; /* Remove border */
+    color: #fff; /* Set text color to white */
+    transition: background-color 0.5s ease !important; /* Smooth transition on hover */
+}
+
+.btn.btn-dark:hover {
+    background-color: #808080 !important; /* Hover color set to grey */
+    color: #fff !important; /* Text color stays white on hover */
+}
+</style>
+<!-- Services End -->
+ <!-- Features Start -->
+<style>
+    .feature {
+        background-color: #000000; /* Black background for the feature section */
+        padding: 20px 0; /* Padding for the section */
+        margin: 20px 0; /* Margin between sections */
+    }
+    .feature .bg-secondary {
+        background-color: #ffffff; /* White background for icons */
+    }
+    .feature h1 {
+        font-size: 2rem; /* Font size for main heading */
+        margin-bottom: 30px; /* Margin below heading */
+        color: #ffffff; /* White text for heading */
+    }
+    .feature p {
+        color: #f4f4f4; /* Light grey text color */
+        margin-bottom: 20px; /* Margin below paragraphs */
+    }
+    .feature h4 {
+        font-size: 1.25rem; /* Font size for feature titles */
+        margin-top: 10px; /* Margin above titles */
+        color: #ffffff; /* White text for titles */
+    }
+    .feature img {
+        max-width: 100%;
+        height: 300px; /* Fixed height */
+        object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+        border-radius: 10px; /* Optional: Add border radius for aesthetics */
+        margin-top: 20px; /* Margin above image */
+    }
+    .feature i {
+        color: #000000; /* Black color for icons */
+    }
+    .bg-secondary {
+        background-color: #ffffff !important; /* White background for icon circles */
+    }
+    @media (max-width: 992px) {
+        .feature h1 {
+            font-size: 1.5rem; /* Adjust font size for smaller screens */
+        }
+        .feature img {
+            height: 200px; /* Adjust the height for smaller screens */
+        }
+    }
+</style>
+
+<div class="container-fluid feature my-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center mb-4" style="max-width: 500px;">
+            <h6 class="text-uppercase text-secondary" style="color: #fff;">Features</h6>
+            <h1 class="display-5">Why Choose CattleCart?</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-3">
+                <div class="text-white mb-4">
+                    <div class="bg-secondary rounded-pill d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fa fa-check-circle fs-4"></i>
+                    </div>
+                    <h4>Veterinary Examined</h4>
+                    <p class="mb-0">All our livestock is thoroughly examined by certified veterinary doctors to ensure optimal health.</p>
+                </div>
+                <div class="text-white">
+                    <div class="bg-secondary rounded-pill d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fa fa-shield-alt fs-4"></i>
+                    </div>
+                    <h4>Quality Assurance</h4>
+                    <p class="mb-0">We guarantee the quality of our livestock products, sourced from trusted farms for freshness and safety.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="d-block bg-white h-100 text-center p-5">
+                    <p style="color: black;">At CattleCart, we prioritize the health and quality of our livestock and livestock products. We connect farmers and livestock enthusiasts with premium options, ensuring sustainable and ethical farming practices. Our mission is to promote the welfare of livestock while providing top-notch products for your farming needs.</p>
+                    <img class="img-fluid" src="images/banner_5.jpg" alt="Livestock Features">
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="text-white mb-4">
+                    <div class="bg-secondary rounded-pill d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fa fa-leaf fs-4"></i>
+                    </div>
+                    <h4>Sustainable Practices</h4>
+                    <p class="mb-0">We advocate for organic and sustainable farming practices to promote environmental health.</p>
+                </div>
+                <div class="text-white">
+                    <div class="bg-secondary rounded-pill d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                        <i class="fa fa-clock fs-4"></i>
+                    </div>
+                    <h4>24/7 Customer Support</h4>
+                    <p class="mb-0">Our dedicated support team is available around the clock to assist you with any inquiries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+<!-- Products Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="mx-auto text-center mb-5" style="max-width: 500px; margin-bottom: 0;">
+            <h6 class="text-primary text-uppercase">Products</h6>
+            <h1 class="display-5">Our Premium Livestock & Products</h1>
+        </div>
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="product-item">
+                    <img class="carousel-image" src="images/pig_1.jpg" alt="Healthy Pig"><br>
+                    <h6 class="mb-3">Healthy Pig</h6>
+                    <h5 class="text-primary mb-0">₹25,000.00</h5>
+                </div>
+                <div class="product-item">
+                    <img class="carousel-image" src="images/pig_2.jpg" alt="Healthy Pig"><br>
+                    <h6 class="mb-3">Healthy Pig</h6>
+                    <h5 class="text-primary mb-0">₹27,000.00</h5>
+                   
+                </div>
+                <div class="product-item">
+                    <img class="carousel-image" src="images/pig_3.jpg" alt="Healthy Pig"><br>
+                    <h6 class="mb-3">Healthy Pig</h6>
+                    <h5 class="text-primary mb-0">₹30,000.00</h5>
+                    
+                </div>
+                <div class="product-item">
+                    <img class="carousel-image" src="images/pexels-syednouman-7189227.jpg" alt="Healthy Livestock"><br>
+                    <h6 class="mb-3">Mixed Livestock</h6>
+                    <h5 class="text-primary mb-0">₹55,000.00</h5>
+                </div>
+                <!-- Add other products here using the same structure -->
+            </div>
+        </div>
+    </div>
+</div>
+<style>.carousel {
+    text-align: center;
+    padding: 0px 5px;
+}
+
+.carousel h2 {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.carousel-images::-webkit-scrollbar { /* WebKit */
+    display: none;
+}
+
+.carousel-image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+</style>
+<!-- Products End -->
+
+
+ <!-- Testimonial Start -->
+<div class="container-fluid" style="background-image: url('images/BANNER.jpg'); background-size: cover; background-position: center; height: 100vh; padding: 0;">
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+        <div class="col-lg-7 text-center">
+            <div class="owl-carousel testimonial-carousel p-5 bg-opacity-50" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 10px;">
+                <div class="testimonial-item text-center text-white">
+                    <img class="img-fluid mx-auto p-2 border border-5 border-secondary rounded-circle mb-4" src="img/testimonial-2.jpg" alt="Client 1">
+                    <p class="fs-5">"CattleCart has transformed my farming experience! The quality of livestock I received is unparalleled, and the customer service is exceptional. I highly recommend them to any farmer looking for healthy and well-bred livestock."</p>
+                    <hr class="mx-auto w-25">
+                    <h4 class="text-white mb-0">Ravi Kumar</h4>
+                </div>
+                <div class="testimonial-item text-center text-white">
+                    <img class="img-fluid mx-auto p-2 border border-5 border-secondary rounded-circle mb-4" src="img/testimonial-2.jpg" alt="Client 2">
+                    <p class="fs-5">"The livestock products I purchased from CattleCart are fresh and of high quality. Their commitment to sustainable farming practices is evident, and I appreciate the transparency in their sourcing. Definitely a 5-star experience!"</p>
+                    <hr class="mx-auto w-25">
+                    <h4 class="text-white mb-0">Anjali Desai</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+    
+<!-- Footer Start -->
+<div class="container-fluid bg-footer text-white mt-5" style="background-color: black;">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <h4 class="text-white mb-4">Get In Touch</h4>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-white me-2"></i>
+                            <p class="text-white mb-0">123 Street, New York, USA</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-white me-2"></i>
+                            <p class="text-white mb-0">uday2004.duk@gmail.com</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-white me-2"></i>
+                            <p class="text-white mb-0">+91 9381743745</p>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-secondary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-secondary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                            <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                            <a class="text-white" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <h4 class="text-white mb-4">Popular Links</h4>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Home</a>
+                            <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Our Services</a>
+                            <a class="text-white" href="#"><i class="bi bi-arrow-right text-white me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Removed Newsletter Section -->
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white py-4">
+    <div class="container text-center">
+        <p class="mb-0">&copy; <a class="text-secondary fw-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by <a class="text-secondary fw-bold" href="https://htmlcodex.com">HTML Codex</a></p>
+        <br>Distributed By: <a class="text-secondary fw-bold" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Signup Page</title>
+
+    <!-- Import Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external style file -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Changed font to Poppins */
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .signup-container {
+            display: flex;
+            height: 100vh; /* Full height of the viewport */
+        }
+
+        .signup-image {
+            width: 50%;
+            background-color: #f0f0f0; /* Fallback color */
+            background-image: url('../landingpage/images/banner_5.jpg'); /* Ensure this path is correct */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .signup-form {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            /* Removed box shadow and border-radius */
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            padding: 12px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-image"></div> <!-- Left side image -->
+        <div class="signup-form">
+            <div class="form-container">
+                <h1>Seller Signup</h1>
+                <form action="signup_seller.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required>
+                    
+                    <label for="contact">Contact:</label>
+                    <input type="text" name="contact" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" required>
+                    
+                    <input type="hidden" name="role" value="seller">
+                    
+                    <input type="submit" value="Signup">
+                </form>
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
